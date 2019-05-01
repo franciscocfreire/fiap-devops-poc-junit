@@ -1,16 +1,15 @@
 package br.com.fiap.devops.tests;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.Test;
 
 import br.com.fiap.devops.Calculadora;
+import junit.framework.TestCase;
 
 
-public class CalculadoraTest {
+public class CalculadoraTest extends TestCase {
 
 	@Test
-	public void testSumar() {
+	public void testSomar() {
 		Calculadora calculadoraDePrueba = new Calculadora();
 		int resultadoEsperado = 4;
 		int resultado = calculadoraDePrueba.somar(2, 2);
@@ -18,7 +17,7 @@ public class CalculadoraTest {
 	}
 
 	@Test
-	public void testRestar() {
+	public void testSubtrair() {
 		Calculadora calc = new Calculadora();
 		int resultadoEsperado = 100;
 		int resultado = calc.subtrair(120, 20);
